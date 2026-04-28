@@ -115,15 +115,40 @@ PLANTILLA_HTML = """<!DOCTYPE html>
             <div className="min-h-screen flex items-center justify-center p-4 bg-slate-50 animate-fade-in relative overflow-hidden">
                 <div className="max-w-4xl w-full bg-white rounded-2xl shadow-xl overflow-hidden relative z-10 border border-slate-200">
                     <div className="bg-teal-700 p-8 md:p-12 text-white relative overflow-hidden">
+                        <div className="absolute right-0 bottom-0 opacity-10 transform translate-y-1/4 translate-x-1/4">
+                            <BrainIcon className="w-64 h-64 text-white" />
+                        </div>
                         <div className="relative z-10">
                             <span className="inline-block px-3 py-1 bg-teal-800 text-teal-100 text-xs font-bold tracking-wider uppercase rounded-full mb-4">Módulo de Entrenamiento Interactivo</span>
                             <h1 className="text-3xl md:text-4xl font-bold mb-4">{APP_TITLE}</h1>
                         </div>
                     </div>
                     <div className="p-8 md:p-12">
+                        <div className="grid md:grid-cols-3 gap-8 mb-12">
+                            <div className="space-y-4">
+                                <div className="w-12 h-12 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center"><BrainIcon className="w-6 h-6" /></div>
+                                <h3 className="font-semibold text-slate-800">Active Recall</h3>
+                                <p className="text-slate-600 text-sm">Sin opciones múltiples. Esfuérzate por recuperar la información desde cero para fortalecer la memoria a largo plazo.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center"><SparklesIcon className="w-6 h-6" /></div>
+                                <h3 className="font-semibold text-slate-800">Tutor IA</h3>
+                                <p className="text-slate-600 text-sm">Recibe pistas inteligentes si te bloqueas y evaluaciones detalladas sobre la precisión de tus respuestas.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="w-12 h-12 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center"><ActivityIcon className="w-6 h-6" /></div>
+                                <h3 className="font-semibold text-slate-800">Caso Clínico</h3>
+                                <p className="text-slate-600 text-sm">Aplica los conceptos teóricos a escenarios prácticos para entrenar la toma de decisiones críticas.</p>
+                            </div>
+                        </div>
+
                         <button onClick={onStart} className="w-full bg-teal-600 hover:bg-teal-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-lg flex items-center justify-center gap-3 transition-colors">
                             <span>Comenzar Entrenamiento</span><ChevronRightIcon className="w-5 h-5" />
                         </button>
+
+                        <p className="text-center text-slate-400 text-sm mt-6 font-medium px-4">
+                            Esta herramienta interactiva es un refuerzo avanzado para tu estudio, diseñada para consolidar tu razonamiento clínico y retención a largo plazo.
+                        </p>
                     </div>
                 </div>
             </div>
