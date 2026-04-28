@@ -6,6 +6,7 @@ import re
 # =====================================================================
 # Aplicación Web: Generador de Entrenadores Moodle (Streamlit)
 # Arquitectura: Cliente-Servidor (Serverless / Cloud Deployable)
+# Se restaura la interfaz gráfica original con iconos y texto dinámico en el componente IntroScreen.
 # =====================================================================
 
 # Configuración inicial de la interfaz de Streamlit
